@@ -2,8 +2,6 @@
    Page
    ========================================================================== */
 
-@use "sass:math";
-
 .page-wrapper {
   margin: 0 auto;
   padding-left: 1em;
@@ -23,16 +21,16 @@
 .page-image {
   position: relative;
   text-align: center;
-  margin-top: math.div(-1 * $site-logo-height, 2);
+  margin-top: (-1 * $site-logo-height) / 2;
   margin-bottom: 2em;
   z-index: 1;
 
   @include breakpoint($medium) {
-    margin-top: math.div(-1.5 * $site-logo-height, 2);
+    margin-top: (-1.5 * $site-logo-height) / 2;
   }
 
   @include breakpoint($large) {
-    margin-top: math.div(-2 * $site-logo-height, 2);
+    margin-top: (-2 * $site-logo-height) / 2;
   }
 
   img {
